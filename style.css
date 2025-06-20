@@ -1,0 +1,129 @@
+/* style.css */
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+  --clr-primary: hsl(24, 70%, 48%);
+  --clr-secondary: #5D2804;
+  --clr-smQuote: #ffd6c3;
+  --clr-bg: #FEEDCA;
+  --clr-accent: #E97451;
+  --clr-light: #FFF;
+  --ff-main: 'Poppins', sans-serif;
+  --transition: 0.3s ease;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--ff-main);
+  line-height: 1.5;
+  background: var(--clr-accent);
+  color: var(--clr-secondary);
+}
+
+/* Utility Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== NAVIGATION ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-primary);
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-light);
+  text-decoration: none;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--clr-light);
+  transition: var(--transition);
+}
+.hamburger::before {
+  transform: translateY(-8px);
+}
+.hamburger::after {
+  transform: translateY(5px);
+}
+.nav-toggle.active .hamburger {
+  background: transparent;
+}
+.nav-toggle.active .hamburger::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active .hamburger::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav {
+  position: relative;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: transform var(--transition);
+}
+.nav-link {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color var(--transition);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--clr-light);
+  transition: width var(--transition);
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+.nav-link:hover {
+  color: var(--clr-bg);
+}
