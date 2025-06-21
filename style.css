@@ -267,3 +267,78 @@ h6 {
   font-size: 1.25rem;
   color: var(--clr-secondary);
 }
+
+/* About & Why Us */
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--clr-secondary);
+}
+.why-us .features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+.why-us .features li {
+  background: var(--clr-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--clr-secondary);
+  font-weight: 500;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: var(--clr-secondary);
+  color: var(--clr-bg);
+  padding: 3rem 0 1rem;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-section h4,
+.footer-section h5 {
+  margin-bottom: 1rem;
+  color: var(--clr-bg);
+}
+.footer-section ul {
+  list-style: none;
+}
+.footer-section ul li {
+  margin-bottom: 0.75rem;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: var(--clr-bg);
+  transition: color var(--transition);
+}
+.footer-section ul li a:hover {
+  color: var(--clr-accent);
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--clr-bg);
+  padding-top: 1rem;
+  position: relative;
+}
+.back-to-top-footer {
+  position: absolute;
+  right: 2rem;
+  top: -1.5rem;
+  background: var(--clr-primary);
+  color: var(--clr-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.back-to-top-footer:hover {
+  background: var(--clr-accent);
+}
