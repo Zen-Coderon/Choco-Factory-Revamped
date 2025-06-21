@@ -397,9 +397,9 @@ body {
 }
 
 @keyframes slideshow {
-  0%, 33%   { background-image: url('assets/Cover_1.png'); }
-  34%, 66%  { background-image: url('assets/Cover_2.png'); }
-  67%, 100% { background-image: url('assets/Cover_3.png'); }
+  0%, 33%   { background-image: url('assets/Cover_1.webp'); }
+  34%, 66%  { background-image: url('assets/Cover_2.webp'); }
+  67%, 100% { background-image: url('assets/Cover_3.webp'); }
 }
 
 .hero h1 {
