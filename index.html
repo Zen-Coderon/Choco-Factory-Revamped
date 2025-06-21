@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Choco Factory</title>
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,17 +22,43 @@
   <header class="header">
     <div class="container nav-container">
       <a href="#" class="logo">ChocoFactory</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
+      <!-- Hamburger Button -->
+      <button class="nav-toggle" id="hamburger-toggle">
+        <span class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
       </button>
+
+      <!-- Cross Button -->
+      <div class="sidebar-close" id="sidebar-close">
+        <span></span>
+      </div>
+
       <nav class="nav">
         <ul class="nav-list">
+          <div class="sidebar-brand">
+            ChocoFactory
+            <!-- Optional: chocolate icon (Unicode 🍫) -->
+            <span style="font-size:1.1rem; margin-left:2px;">🍫</span>
+          </div>
+          <div class="sidebar-close" tabindex="0" aria-label="Close menu">
+            <span></span>
+          </div>
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#trending" class="nav-link">Trending</a></li>
           <li><a href="#new-launches" class="nav-link">New Launches</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#why-us" class="nav-link">Why Us</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <div class="sidebar-bottom">
+            <div class="sidebar-social">
+              <a href="#" title="Instagram" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.363 3.678 1.344c-.98.98-1.213 2.092-1.272 3.374C2.013 8.332 2 8.741 2 12c0 3.259.013 3.668.072 4.948.059 1.282.292 2.394 1.272 3.374.98.98 2.092 1.213 3.374 1.272C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.059 2.394-.292 3.374-1.272.98-.98 1.213-2.092 1.272-3.374.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.059-1.282-.292-2.394-1.272-3.374-.98-.98-2.092-1.213-3.374-1.272C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+              <a href="#" title="Facebook" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg></a>
+            </div>
+            <div class="sidebar-tagline">Crafted with ❤️ by ChocoFactory</div>
+          </div>
         </ul>
       </nav>
     </div>
@@ -192,6 +217,54 @@
     </div>
   </section>
 
+    <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h3>What Our Customers Say</h3>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <img src="assets/Testimonial_1.png" alt="Lara" class="avatar" />
+          <blockquote>
+            “The Gourmet Bar Breaks and Golden Bloom Selection made me fall in love with
+             chocolate all over again. Each bite tastes like it was crafted with
+              love. From texture to packaging, it’s luxury in its purest form!”
+          </blockquote>
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="author">— Ananya, April 7, 2025</p>
+          <span class="tried-product">Tried: Gourmet Bar Breaks, Golden Bloom Selection</span>
+        </article>
+        <article class="testimonial-card">
+          <img src="assets/Testimonial_2.png" alt="willson" class="avatar" />
+          <blockquote>
+            “We celebrated with the Noir Winter Indulgence box—and wow, it
+             was unforgettable. Rich, aromatic, and beautifully designed, 
+             it turned our quiet evening into something truly special.”
+          </blockquote>
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="author">— Riya & Arjun, April 18, 2025</p>
+          <span class="tried-product">Tried: Noir Winter Indulgence</span>
+        </article>
+        <article class="testimonial-card">
+          <img src="assets/Testimonial_3.png" alt="david" class="avatar" />
+          <blockquote>
+            “The Midnight Cocoa Box and Royal Indulgence are on another level.
+             Velvety, bold, and absolutely worth it. If you think you've had
+              premium chocolate before… trust me, you haven’t.”
+          </blockquote>
+          <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="author">— Karan, April 24, 2025</p>
+          <span class="tried-product">Tried: Midnight Cocoa Box, Royal Indulgence</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
     <!-- Contact / Subscribe -->
   <section id="contact" class="subscribe">
     <div class="container">
@@ -250,35 +323,49 @@
   </footer>
 
     <!-- Inline JavaScript -->
-  <script>
-    // Mobile nav toggle + overlay
-    // Mobile nav toggle + overlay
-    const navToggle = document.querySelector('.nav-toggle');
-    const navList = document.querySelector('.nav-list');
-    const overlay = document.getElementById('navOverlay');
-    function closeNav() {
-      navList.classList.remove('nav-visible');
-      navToggle.classList.remove('active');
-      overlay.classList.remove('active');
-    }
-    navToggle.addEventListener('click', () => {
-      navList.classList.toggle('nav-visible');
-      navToggle.classList.toggle('active');
-      overlay.classList.toggle('active');
-    });
-    overlay.addEventListener('click', closeNav);
+    <script>
+ // Select elements
+const hamburgerToggle = document.getElementById('hamburger-toggle');
+const sidebarCloseButtons = document.querySelectorAll('.sidebar-close');
+const navList = document.querySelector('.nav-list');
+const overlay = document.getElementById('navOverlay');
 
-    // Back to Top
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      backToTop.classList.toggle('visible', window.scrollY > 300);
-    });
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    document.getElementById('backToTopFooter')
-      .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  </script>
-  
+// Function to open nav
+function openNav() {
+  navList.classList.add('nav-visible');
+  overlay.classList.add('active');
+  hamburgerToggle.style.display = 'none'; // hide hamburger
+}
+
+// Function to close nav
+function closeNav() {
+  navList.classList.remove('nav-visible');
+  overlay.classList.remove('active');
+  hamburgerToggle.style.display = 'block'; // show hamburger
+}
+
+// Toggle sidebar open
+hamburgerToggle.addEventListener('click', openNav);
+
+// Close on any .sidebar-close (there are 2)
+sidebarCloseButtons.forEach(btn => btn.addEventListener('click', closeNav));
+
+// Close on overlay click
+overlay.addEventListener('click', closeNav);
+
+// Back to Top Button Logic
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 300);
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+document.getElementById('backToTopFooter')
+  .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+</script>
+
+
 </body>
 </html>
