@@ -457,7 +457,7 @@ body {
   transition: box-shadow var(--transition);
 }
 .shop-btn:hover {
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 2px 8px 15px rgba(198, 155, 255, 0.897);
 }
 
 /* ========== SECTIONS ========== */
@@ -467,6 +467,7 @@ section {
 .categories h3,
 .trending h3,
 .new-launches h3,
+.trendwebp h3,
 .about h3,
 .why-us h3,
 .testimonials h3,
