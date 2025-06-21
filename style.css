@@ -106,10 +106,6 @@ body {
 .hamburger-line:nth-child(3) { top: 17px; }
 
 /* Remove hamburger-to-cross animation */
-.nav-toggle.active .hamburger-line {
-  transform: none;
-  opacity: 1;
-}
 
 .nav {
   position: relative;
@@ -157,10 +153,6 @@ body {
 }
 
 /* Hamburger always stays as three lines, never morphs into a cross */
-.nav-toggle.active .hamburger-line {
-  transform: none !important;
-  opacity: 1 !important;
-}
 
 /* Only show sidebar close icon inside sidebar on mobile */
 @media (max-width: 768px) {
@@ -180,14 +172,6 @@ body {
     right: 1.5rem;
     transform: translateY(-50%);
     z-index: 1050;
-  }
-
-  .nav-list.nav-visible ~ #hamburger-toggle {
-    display: none !important;
-  }
-
-  .nav-list.nav-visible ~ #sidebar-close {
-    display: flex !important;
   }
 }
 
@@ -218,9 +202,6 @@ body {
     gap: 18px;
     align-items: flex-start;
   }
-  .nav-list.nav-visible {
-    transform: translateX(0);
-  }
   .nav-list li {
     width: 100%;
     margin-bottom: 0;
@@ -228,11 +209,6 @@ body {
     transform: translateX(30px);
     transition: opacity 0.3s 0.2s, transform 0.3s 0.2s;
   }
-  .nav-list.nav-visible li {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .nav-list li:nth-child(2) { transition-delay: 0.25s; }
   .nav-list li:nth-child(3) { transition-delay: 0.3s; }
   .nav-list li:nth-child(4) { transition-delay: 0.35s; }
   .nav-list li:nth-child(5) { transition-delay: 0.4s; }
@@ -257,9 +233,6 @@ body {
     transition: transform 0.4s cubic-bezier(.77,0,.18,1);
     gap: 18px;
     align-items: flex-start;
-  }
-  .nav-list.nav-visible {
-    transform: translateX(0);
   }
 }
 
@@ -337,11 +310,6 @@ body {
   transform: translateX(30px);
   transition: opacity 0.3s 0.2s, transform 0.3s 0.2s;
 }
-.nav-list.nav-visible li {
-  opacity: 1;
-  transform: translateX(0);
-}
-.nav-list li:nth-child(2) { transition-delay: 0.25s; }
 .nav-list li:nth-child(3) { transition-delay: 0.3s; }
 .nav-list li:nth-child(4) { transition-delay: 0.35s; }
 .nav-list li:nth-child(5) { transition-delay: 0.4s; }
@@ -744,8 +712,7 @@ h6 {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.footer-section h4,
-.footer-section h5 {
+.footer-section h4 {
   margin-bottom: 1rem;
   color: var(--clr-bg);
 }
@@ -800,18 +767,5 @@ h6 {
   visibility: hidden;
   transition: opacity var(--transition);
 }
-.back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* ========== FADE-IN ON SCROLL ========== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0);
-}
