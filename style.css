@@ -290,6 +290,33 @@ h6 {
   font-weight: 500;
 }
 
+/* Subscribe Form */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.subscribe-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  max-width: 100%;
+}
+.subscribe-form button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background: var(--clr-secondary);
+  color: var(--clr-light);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.subscribe-form button:hover {
+  background: var(--clr-accent);
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background: var(--clr-secondary);

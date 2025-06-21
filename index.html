@@ -192,6 +192,17 @@
     </div>
   </section>
 
+    <!-- Contact / Subscribe -->
+  <section id="contact" class="subscribe">
+    <div class="container">
+      <h3>Enter Your Email</h3>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
     <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
@@ -241,6 +252,21 @@
     <!-- Inline JavaScript -->
   <script>
     // Mobile nav toggle + overlay
+    // Mobile nav toggle + overlay
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.nav-list');
+    const overlay = document.getElementById('navOverlay');
+    function closeNav() {
+      navList.classList.remove('nav-visible');
+      navToggle.classList.remove('active');
+      overlay.classList.remove('active');
+    }
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('nav-visible');
+      navToggle.classList.toggle('active');
+      overlay.classList.toggle('active');
+    });
+    overlay.addEventListener('click', closeNav);
 
     // Back to Top
     const backToTop = document.getElementById('backToTop');
@@ -253,5 +279,6 @@
     document.getElementById('backToTopFooter')
       .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
+  
 </body>
 </html>
