@@ -8,6 +8,9 @@
   <link 
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -194,28 +197,117 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h3>About ChocoFactory</h3>
-      <p>
-        ChocoFactory is your destination for handcrafted chocolates made with the finest webpredients.
-        From classic truffles to innovative new blends, we create experiences that delight every palate.
-      </p>
+ <section id="about" class="about about-premium-section">
+  <div class="about-premium-container">
+    <div class="about-premium-image-col">
+  <div id="carouselExampleControls" class="carousel slide about-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner rounded-3 shadow">
+      <div class="carousel-item active">
+        <img src="assets/Caro_1.webp" class="d-block w-100" alt="ChocoFactory Interior 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_2.webp" class="d-block w-100" alt="ChocoFactory Interior 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_3.webp" class="d-block w-100" alt="ChocoFactory Interior 3" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_4.webp" class="d-block w-100" alt="ChocoFactory Interior 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_5.webp" class="d-block w-100" alt="ChocoFactory Interior 3" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_6.webp" class="d-block w-100" alt="ChocoFactory Interior 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_7.webp" class="d-block w-100" alt="ChocoFactory Interior 3" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_8.webp" class="d-block w-100" alt="ChocoFactory Interior 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Caro_9.webp" class="d-block w-100" alt="ChocoFactory Interior 3" />
+      </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+    <div class="about-premium-content-col">
+      <div class="about-premium-card">
+        <h3 class="about-premium-heading">About ChocoFactory</h3>
+        <div class="about-premium-tagline"><em>Where Craft Meets Indulgence</em></div>
+        <p class="about-premium-desc">
+          At ChocoFactory, every chocolate is a masterpiece—handcrafted from ethically sourced cocoa, blended in small batches, and finished with a touch of artistry. Our passion is to create moments of pure delight, one exquisite bite at a time.
+        </p>
+        <blockquote class="about-premium-quote">
+          <span class="about-premium-quote-mark">“</span>
+          Chocolate is happiness you can eat.
+          <span class="about-premium-quote-author">– Ursula Kohaupt</span>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Why Us Section -->
-  <section id="why-us" class="why-us">
-    <div class="container">
-      <h3>Why Choose Us?</h3>
-      <ul class="features">
-        <li><i>"Handcrafted in small batches"</i></li>
-        <li>Premium, ethically sourced webpredients</li>
-        <li>Unique and seasonal flavors</li>
-        <li>Fast, reliable delivery</li>
-      </ul>
+<section id="why-us" class="why-us-section py-5">
+  <div class="container text-center">
+    <h3 class="section-title mb-3">Why Choose Us?</h3>
+    <p class="section-subtitle mb-5 text-muted fst-italic">We blend passion with purpose to deliver the finest chocolate experience.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card why-card h-100 text-center border-0 shadow-sm p-4">
+          <div class="why-icon mb-3">
+            <i class="fas fa-seedling fa-2x text-choco"></i>
+          </div>
+          <h5 class="fw-bold">Ethically Sourced</h5>
+          <p class="small text-muted">Sustainable, fair-trade cocoa from trusted growers.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card why-card h-100 text-center border-0 shadow-sm p-4">
+          <div class="why-icon mb-3">
+            <i class="fas fa-hand-sparkles fa-2x text-choco"></i>
+          </div>
+          <h5 class="fw-bold">Handcrafted in Small Batches</h5>
+          <p class="small text-muted">Every piece made with love and precision.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card why-card h-100 text-center border-0 shadow-sm p-4">
+          <div class="why-icon mb-3">
+            <i class="fas fa-star fa-2x text-choco"></i>
+          </div>
+          <h5 class="fw-bold">Signature Flavors</h5>
+          <p class="small text-muted">Innovative blends you won't find anywhere else.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card why-card h-100 text-center border-0 shadow-sm p-4">
+          <div class="why-icon mb-3">
+            <i class="fas fa-shipping-fast fa-2x text-choco"></i>
+          </div>
+          <h5 class="fw-bold">Fast, Reliable Delivery</h5>
+          <p class="small text-muted">From our factory to your door in no time.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
     <!-- Testimonials -->
   <section id="testimonials" class="testimonials">
@@ -322,49 +414,52 @@
     </div>
   </footer>
 
-    <!-- Inline JavaScript -->
-    <script>
- // Select elements
-const hamburgerToggle = document.getElementById('hamburger-toggle');
-const sidebarCloseButtons = document.querySelectorAll('.sidebar-close');
-const navList = document.querySelector('.nav-list');
-const overlay = document.getElementById('navOverlay');
+<!-- Your Custom JavaScript -->
+<script>
+  // Select elements
+  const hamburgerToggle = document.getElementById('hamburger-toggle');
+  const sidebarCloseButtons = document.querySelectorAll('.sidebar-close');
+  const navList = document.querySelector('.nav-list');
+  const overlay = document.getElementById('navOverlay');
 
-// Function to open nav
-function openNav() {
-  navList.classList.add('nav-visible');
-  overlay.classList.add('active');
-  hamburgerToggle.style.display = 'none'; // hide hamburger
-}
+  // Function to open nav
+  function openNav() {
+    navList.classList.add('nav-visible');
+    overlay.classList.add('active');
+    hamburgerToggle.style.display = 'none'; // hide hamburger
+  }
 
-// Function to close nav
-function closeNav() {
-  navList.classList.remove('nav-visible');
-  overlay.classList.remove('active');
-  hamburgerToggle.style.display = 'block'; // show hamburger
-}
+  // Function to close nav
+  function closeNav() {
+    navList.classList.remove('nav-visible');
+    overlay.classList.remove('active');
+    hamburgerToggle.style.display = 'block'; // show hamburger
+  }
 
-// Toggle sidebar open
-hamburgerToggle.addEventListener('click', openNav);
+  // Toggle sidebar open
+  hamburgerToggle.addEventListener('click', openNav);
 
-// Close on any .sidebar-close (there are 2)
-sidebarCloseButtons.forEach(btn => btn.addEventListener('click', closeNav));
+  // Close on any .sidebar-close (there are 2)
+  sidebarCloseButtons.forEach(btn => btn.addEventListener('click', closeNav));
 
-// Close on overlay click
-overlay.addEventListener('click', closeNav);
+  // Close on overlay click
+  overlay.addEventListener('click', closeNav);
 
-// Back to Top Button Logic
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('visible', window.scrollY > 300);
-});
-backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-document.getElementById('backToTopFooter')
-  .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
+  // Back to Top Button Logic
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 300);
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  document.getElementById('backToTopFooter')
+    .addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
+
+<!-- ✅ Bootstrap JS Bundle (must be outside script tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 
 
 </body>

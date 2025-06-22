@@ -29,7 +29,7 @@
 |-----------|----------------|
 | HTML5     | Page structure |
 | CSS3      | Styling, layout, responsiveness |
-| JavaScript (optional) | Interactivity, menu toggle, and slide behavior |
+| JavaScript | Interactivity, menu toggle, and slide behavior |
 
 ---
 
@@ -61,15 +61,6 @@ cd Choco-Factory-Revamped
 ```
 
 Open `index.html` in your preferred browser (no server setup required).
-
----
-
-## 📌 To-Do / Roadmap
-
-- [ ] Add animations to the slideshow
-- [ ] Integrate form submission backend (e.g., Formspree or Firebase)
-- [ ] Enhance performance (image lazy-loading & compression)
-- [ ] Improve accessibility (ARIA labels, color contrast)
 
 ---
 
