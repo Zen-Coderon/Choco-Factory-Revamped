@@ -381,6 +381,42 @@ body {
   color: #d36600ee;
 }
 
+/* 1. Navigation bar links hover effect */
+.nav-link {
+  transition: color 0.3s cubic-bezier(.4,0,.2,1);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #e6b07a !important;
+}
+
+/* 2. Product cards hover effect */
+.card {
+  transition: 
+    transform 0.3s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+}
+.card:hover,
+.card:focus-within {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(93, 40, 4, 0.13), 0 2px 8px rgba(212, 175, 55, 0.07) inset;
+  z-index: 2;
+}
+
+/* 3. "Shop Now" button hover effect */
+.shop-btn {
+  transition: 
+    background 0.3s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.3s cubic-bezier(.4,0,.2,1),
+    color 0.3s cubic-bezier(.4,0,.2,1);
+}
+.shop-btn:hover,
+.shop-btn:focus {
+  background: #4b2e0a;
+  color: #fffbe6;
+  box-shadow: 0 6px 24px rgba(93, 40, 4, 0.18);
+}
+
 
 /* Sidebar Social & Tagline */
 .sidebar-bottom {
@@ -457,7 +493,7 @@ body {
   transition: box-shadow var(--transition);
 }
 .shop-btn:hover {
-  box-shadow: 2px 8px 15px rgba(198, 155, 255, 0.897);
+  box-shadow: 2px 8px 15px rgba(255, 94, 0, 0.897);
 }
 
 /* ========== SECTIONS ========== */
